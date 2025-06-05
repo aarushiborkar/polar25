@@ -16,62 +16,87 @@
   <nav class="nav nav-tabs justify-content-center shadow-sm bg-white sticky-top">
     <a class="nav-link" href="index.html">About</a>
     <a class="nav-link active" href="tasks.html">Tasks</a>
-    <a class="nav-link" href="#participation">Participation</a>
+    <a class="nav-link" href="participation.html">Participation</a>
     <a class="nav-link" href="organizers.html">Organizers</a>
   </nav>
+<section class="the-task" style="margin-top: 2rem;">
+  <div class="container">
+    <h2>The Task</h2>
 
-  <!-- PAGE CONTENT -->
-  <div class="container my-5">
+    <p>Polarization refers to the division of opinions into two sharply contrasting groups, often accompanied by hostility, intolerance, or exclusion. In today's digital era, polarization is intensifying across platforms and geographies, influencing public discourse, exacerbating conflicts, and contributing to societal fragmentation.</p>
 
-    <!-- Welcome Section -->
-<!-- Welcome Section -->
-<section class="welcome-section container">
-  <h1>👋 Welcome to the POLAR Shared Task!</h1>
-  <p>Join us in advancing research on online polarization across multiple languages, cultures, and events.</p>
+    <p>This shared task is the first SemEval initiative focused on polarization, aiming to advance the computational understanding of how polarization manifests in text across multiple languages, cultures, and event types. Participants will develop models capable of detecting and interpreting polarization in a variety of online contexts.</p>
+
+    <p>The task centers on textual data collected from real-world events such as elections, international conflicts, social protests, and ideological debates. The primary goal is to evaluate systems’ ability to identify polarized content, classify its targets, and determine the linguistic expressions of polarization.</p>
+
+    <h3>Multilingual, Multicultural, and Multievent Scope</h3>
+    <p>To promote global inclusivity and cross-cultural representation, the dataset encompasses 15 languages, including many low-resource and underrepresented ones in mainstream NLP research.</p>
+    <p><strong>High-resource languages:</strong> English, German, Spanish, Arabic.</p>
+    <p><strong>Mid-resource languages:</strong> Urdu, Mozambican Portuguese, Amharic.</p>
+    <p><strong>Low-resource languages:</strong> Kinyarwanda, Hausa, Igbo, Twi, Swahili, isiXhosa, Zulu, Emakhuwa.</p>
+
+    <h3>Task Format and Subtasks</h3>
+    <p>Participants may choose to compete in one or more of three subtasks:</p>
+    <ol>
+      <li><strong>Subtask 1: Polarization Detection</strong> – Binary classification to determine whether a post contains polarized content (Polarized or Not Polarized).</li>
+      <li><strong>Subtask 2: Polarization Type Classification</strong> – Identify the target of polarization, including political groups, religious groups, racial/ethnic communities, gender identities, sexual orientations, or other domain-specific targets.</li>
+      <li><strong>Subtask 3: Manifestation Identification</strong> – Classify how polarization is expressed; multiple labels possible, such as stereotyping, vilification, dehumanization, deindividuation, extreme language, lack of empathy, invalidation.</li>
+    </ol>
+
+    <h3>Data Description</h3>
+    <p>The dataset is sourced from news websites, Reddit, blogs, Bluesky, and regional forums, covering event types like elections, conflicts, gender rights, migration, and more. Each language includes between 3,000 and 5,000 annotated instances.</p>
+    <p>Annotation tools used include Label Studio, Prolific, Potato, and Mechanical Turk.</p>
+    <p>Sample Inter-Annotator Agreement (IAA) scores indicate dataset quality: Amharic (kappa 0.49), Urdu (0.83), English (0.52).</p>
+    <p>The dataset is split into training, development, and test sets for system development and evaluation.</p>
+
+    <h3>Research Contributions</h3>
+    <p>This task aims to advance socially responsible AI by supporting NLP for low-resource languages and fostering explainable and inclusive NLP systems. It will help establish multilingual benchmarks for polarization detection, promoting fair and transparent computational approaches to understanding societal divisions.</p>
+
+    <h3>Timeline</h3>
+    <ul>
+      <li>Task announcement: June 2025</li>
+      <li>Data release: July 2025</li>
+      <li>Evaluation phase begins: September 2025</li>
+      <li>Submission deadline: October 2025</li>
+      <li>Paper submissions to SemEval: November 2025</li>
+      <li>SemEval Workshop at ACL: March or April 2026</li>
+    </ul>
+
+    <h3>Who Should Participate?</h3>
+    <p>This task welcomes participation from:</p>
+    <ul>
+      <li>NLP researchers and developers</li>
+      <li>Computational social science teams</li>
+      <li>Practitioners working on hate speech and misinformation</li>
+      <li>Peacebuilding and civil society organizations</li>
+      <li>Students and academics from cross-disciplinary backgrounds</li>
+    </ul>
+
+    <h3>Organizing Team</h3>
+    <p>The POLAR task is organized by researchers from:</p>
+    <ul>
+      <li>University of Hamburg</li>
+      <li>Bahir Dar University</li>
+      <li>Macquarie University</li>
+      <li>Imperial College London</li>
+      <li>University of Pretoria</li>
+      <li>Zayed University</li>
+      <li>Bayero University Kano</li>
+      <li>Northeastern University</li>
+    </ul>
+
+    <h3>Contact and Community</h3>
+    <p>For questions or to join the community, reach out via email at <a href="mailto:your-email@domain.com">your-email@domain.com</a>. Stay connected through the Slack channel, mailing list, and GitHub repository (links to be announced soon).</p>
+  </div>
 </section>
 
-<!-- Info Sections -->
-<section class="info-section container">
-  <div class="info-block">
-    <h2>🎯 The Goal</h2>
-    <p>Explore and address the challenge of online polarization by analyzing a diverse multilingual and multicultural dataset spanning multiple real-world events.</p>
+<footer class="footer-section">
+  <div class="footer-container text-center">
+    <img src="assets/logo-small.png" alt="POLAR Task Logo" style="width: 80px; height: auto; margin-bottom: 10px;" />
+    <p>&copy; 2026 POLAR Shared Task. All rights reserved.</p>
+    <p>Made with ❤️ by the POLAR Team</p>
   </div>
-  <div class="info-block">
-    <h2>📚 About POLAR</h2>
-    <p>POLAR is a benchmark dataset featuring over 23k instances in seven languages, annotated for polarization presence, type, and manifestation. It supports robust and adaptable NLP research on digital polarization worldwide.</p>
-  </div>
-  <div class="info-block">
-    <h2>📄 Task Documentation</h2>
-    <p>Read the task description, access the dataset, and learn submission guidelines for the POLAR shared task.</p>
-    <a href="#" class="btn-link">Task Documentation</a>
-  </div>
-  <div class="info-block">
-    <h2>📰 News & Updates</h2>
-    <p>Stay informed about announcements, deadlines, and updates regarding the POLAR shared task.</p>
-  </div>
-  <div class="info-block">
-    <h2>🤝 Stay Connected</h2>
-    <p>Join the POLAR community to collaborate and discuss the task with other researchers and participants.</p>
-  </div>
-</section>
-
-<!-- Organizers Section -->
-<section class="organizers-section container">
-  <h2>👥 Task Organizers</h2>
-  <div class="organizers-list">
-    <div class="organizer">
-      <h3>Polarization Processing Lab</h3>
-      <a href="https://polarization-processing.org" target="_blank" rel="noopener noreferrer" class="btn-link">Website</a>
-    </div>
-    <div class="organizer">
-      <h3>University of Global Studies</h3>
-      <a href="https://uniglobal.edu" target="_blank" rel="noopener noreferrer" class="btn-link">Website</a>
-    </div>
-  </div>
-</section>
-
-  </div>
-
+</footer>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

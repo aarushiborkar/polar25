@@ -13,71 +13,133 @@
   <nav class="nav nav-tabs justify-content-center shadow-sm bg-white sticky-top">
     <a class="nav-link" href="index.html#about">About</a>
     <a class="nav-link" href="tasks.html">Tasks</a>
-    <a class="nav-link" href="index.html#participation">Participation</a>
+    <a class="nav-link" href="participation.html">Participation</a>
     <a class="nav-link" href="organizers.html">Organizers</a>
   </nav>
 
-<div class="container my-5 mx-auto text-justify">
-    <h1 class="text-center mb-4">Getting Started</h1>
-    <p class="lead text-center mb-5">A quick introduction to the POLAR task.</p>
+  <main class="container py-5">
+    <h2>🧠 Task Overview</h2>
+    <p>
+      Polarization refers to the division of opinions into two sharply contrasting groups, especially when marked by hostility, intolerance, or exclusion.
+      In the digital era, polarization is intensifying across platforms and geographies, affecting public discourse, exacerbating conflicts, and contributing to societal fragmentation.
+    </p>
+    <p>
+      This shared task is the first SemEval task on polarization, and it seeks to advance the computational understanding of how polarization manifests in text across multiple languages, cultures, and event types.
+      Participants will develop models that can detect and interpret polarization in a variety of online contexts.
+    </p>
+    <p>
+      The task focuses on textual data collected from real-world events including elections, international conflicts, social protests, and ideological debates. The goal is to evaluate systems' abilities to identify polarized content, classify its target, and determine how polarization is expressed linguistically.
+    </p>
 
-    <div class="row justify-content-center">
-      <div class="col-md-10">
+    <h3>🌍 Multilingual, Multicultural, and Multievent Scope</h3>
+    <p>
+      This task emphasizes global inclusivity and cross-cultural representation. We include data from 15 languages, many of which are low-resource and underrepresented in mainstream NLP tasks.
+    </p>
+    <p><strong>Languages include:</strong></p>
+    <ul>
+      <li><strong>High-resource:</strong> English, German, Spanish, Arabic</li>
+      <li><strong>Mid-resource:</strong> Urdu, Mozambican Portuguese, Amharic</li>
+      <li><strong>Low-resource:</strong> Kinyarwanda, Hausa, Igbo, Twi, Swahili, isiXhosa, Zulu, Emakhuwa</li>
+    </ul>
 
-    
+    <h3>🧪 Task Format and Subtasks</h3>
+    <p>Participants may choose to compete in one or more of the following three subtasks:</p>
+    <h5>Subtask 1: Polarization Detection</h5>
+    <p>Binary classification: Identify whether a post contains polarized content.</p>
+    <ul>
+      <li>Labels: Polarized, Not Polarized</li>
+    </ul>
 
-        <section class="mb-5">
-          <h3>What is POLAR?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-          </p>
-          </section>
+    <h5>Subtask 2: Polarization Type Classification</h5>
+    <p>Classify the target of polarization.</p>
+    <ul>
+      <li>Political groups or ideologies</li>
+      <li>Religious groups or beliefs</li>
+      <li>Racial or ethnic communities</li>
+      <li>Gender identities</li>
+      <li>Sexual orientations</li>
+      <li>Other/domain-specific targets</li>
+    </ul>
 
-        <section class="mb-5">
-          <h3>Why is this important?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-          </p></section>
+    <h5>Subtask 3: Manifestation Identification</h5>
+    <p>Classify how polarization is expressed. Multiple labels possible.</p>
+    <ul>
+      <li>Stereotyping</li>
+      <li>Vilification</li>
+      <li>Dehumanization</li>
+      <li>Deindividuation</li>
+      <li>Use of Extreme Language</li>
+      <li>Lack of Empathy</li>
+      <li>Invalidation</li>
+    </ul>
 
-        <section class="mb-5">
-          <h3>How to participate?</h3>
-          <ul>
-            <li>💡 Use pre-trained language models or build from scratch</li>
-            <li>📊 Experiment with different features, loss functions, or classification heads</li>
-            <li>🌍 Participate in either or both high- and low-resource tracks</li>
-            <li>🔧 Fine-tune models like BERT, XLM-R, GPT or explore few-shot settings</li>
-            <li>📈 Submit your predictions and compare with the leaderboard</li>
-          </ul>
-        </section>
+    <h3>📁 Data Description</h3>
+    <p>
+      Dataset sources: News websites, Reddit, blogs, Bluesky, regional forums. Event types include elections, conflicts, gender rights, migration, and more.
+    </p>
+    <p>Each language has 3,000–5,000 annotated instances. Tools used: Label Studio, Prolific, Potato, Mechanical Turk.</p>
+    <p><strong>Sample Inter-Annotator Agreement (IAA):</strong></p>
+    <ul>
+      <li>Amharic: Kappa = 0.49</li>
+      <li>Urdu: Kappa = 0.83</li>
+      <li>English: Kappa = 0.52</li>
+    </ul>
+    <p>Datasets split into training, development, and test sets.</p>
 
-        <section class="mb-5">
-          <h3>Example Inputs</h3>
-       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-          </p> </section>
+    <h3>🎯 Research Contributions</h3>
+    <ul>
+      <li>Advancing socially responsible AI</li>
+      <li>Supporting low-resource language NLP</li>
+      <li>Fostering explainable and inclusive NLP systems</li>
+      <li>Creating multilingual benchmarks for polarization detection</li>
+    </ul>
 
-        <section class="mb-5">
-          <h3>Evaluation</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-          </p>
-        <section class="mb-5">
-          <h3>Negative Results Welcome</h3>
-       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-          </p> </section>
+    <h3>📅 Timeline</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr><th>Phase</th><th>Date (Tentative)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Task Announcement</td><td>June 2025</td></tr>
+        <tr><td>Data Release</td><td>July 2025</td></tr>
+        <tr><td>Evaluation Phase Begins</td><td>September 2025</td></tr>
+        <tr><td>Submission Deadline</td><td>October 2025</td></tr>
+        <tr><td>Paper Submission to SemEval</td><td>November 2025</td></tr>
+        <tr><td>SemEval Workshop @ ACL</td><td>March or April 2026</td></tr>
+      </tbody>
+    </table>
 
-        <section class="mb-5">
-          <h3>System Paper</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-          </p> </section>
+    <h3>🧑‍🤝‍🧑 Who Should Participate?</h3>
+    <ul>
+      <li>NLP researchers and developers</li>
+      <li>Computational social science teams</li>
+      <li>Practitioners in hate speech/misinformation</li>
+      <li>Peacebuilding and civil society organizations</li>
+      <li>Students and cross-disciplinary academics</li>
+    </ul>
 
-      </div>
-    </div>
+    <h3>👥 Organizing Team</h3>
+    <p>
+      Researchers from: University of Hamburg, Bahir Dar University, Macquarie University, Imperial College London, University of Pretoria, Zayed University, Bayero University Kano, Northeastern University
+    </p>
+
+    <h3>📬 Contact and Community</h3>
+    <ul>
+      <li>Email: your-email@domain.com</li>
+      <li>Slack Channel: Link TBA</li>
+      <li>Mailing List: Link TBA</li>
+      <li>GitHub: Link TBA</li>
+    </ul>
+  </main>
+
+
+<footer class="footer-section">
+  <div class="footer-container text-center">
+    <img src="assets/logo-small.png" alt="POLAR Task Logo" style="width: 80px; height: auto; margin-bottom: 10px;" />
+    <p>&copy; 2026 POLAR Shared Task. All rights reserved.</p>
+    <p>Made with ❤️ by the POLAR Team</p>
   </div>
-
-  <footer class="footer-section mt-5">
-    <div class="footer-container">
-      <p>&copy; 2025 POLAR Shared Task. All rights reserved.</p>
-      <p>Made with ❤️ by the POLAR Team</p>
-    </div>
-  </footer>
-
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
